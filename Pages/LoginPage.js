@@ -1,3 +1,4 @@
+import { test, expect } from '@playwright/test';
 export class LoginPage{
 
     constructor(page){
@@ -23,7 +24,9 @@ export class LoginPage{
 
     async verifyLoginSuccess(){
 
-        await this.dashboardHeader.waitFor()
+       // await this.dashboardHeader
+       await expect(this.dashboardHeader).toBeVisible();
+       
 
     }
 }
