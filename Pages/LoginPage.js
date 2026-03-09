@@ -12,7 +12,7 @@ export class LoginPage{
     }
 
     async navigateToLoginPage(){
-        await this.page.goto('https://opensource-demo.orangehrmlive.com/')
+        await this.page.goto('/')
 
     }
 
